@@ -1,5 +1,13 @@
 # 🌟 **Sistema de Gerenciamento de Estoque e Impressão de Nota Fiscal**
 
+## Observação:
+O arquivo SQL não foi enviado junto ao projeto, mas se você tiver interesse em mexer nele, pode me chamar no WhatsApp!
+
+📲 **Entre em contato no WhatsApp**:  
+[Enviar mensagem para o WhatsApp](http://whatsapp.me/5585997752571)
+
+
+
 ![Logo do Sistema](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img0.png)
 
 Bem-vindo ao **Sistema de Gerenciamento de Estoque e Impressão de Nota Fiscal**, uma solução desenvolvida para facilitar o controle de estoque e a emissão de notas fiscais de maneira prática e eficiente. Este sistema permite a gestão de produtos, clientes, vendas, e gera relatórios detalhados, incluindo gráficos de lucros, além de facilitar a integração com o WhatsApp para suporte ao cliente.
