@@ -237,15 +237,15 @@
                                 <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome">
                             </div>
                             <div class="form-group">
-                                <label for="preco">Cpf:</label>
+                                <label for="preco">CPF:</label>
                                 <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite o cpf">
                             </div>
                             <div class="form-group">
-                                <label for="preco">email:</label>
+                                <label for="preco">Email:</label>
                                 <input type="text" class="form-control" id="email" name="email" placeholder="Digite o email">
                             </div>
                             <div class="form-group">
-                                <label for="preco">telefone:</label>
+                                <label for="preco">Telefone:</label>
                                 <input type="text" class="form-control phone" id="telefone" name="telefone" placeholder="Digite o telefone">
                             </div>
                             <div style="text-align:center;">
