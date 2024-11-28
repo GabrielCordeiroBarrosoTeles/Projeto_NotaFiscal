@@ -1,18 +1,69 @@
-# Depois eu ajeito!!!!
+# 🌟 **Sistema de Gerenciamento de Estoque e Impressão de Nota Fiscal**
 
-# 🚀 **[Nome da Equipe]** - A Equipe Incrível
+![Logo do Sistema](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img0.png)
 
-![Logo da Equipe](URL_da_logo_da_equipe)
-
-Somos a **[Nome da Equipe]**, uma equipe dedicada a [descrição breve da missão da equipe ou do projeto]. Trabalhamos com paixão, inovação e colaboração para transformar ideias em realidade. Confira abaixo nossos incríveis colaboradores!
+Bem-vindo ao **Sistema de Gerenciamento de Estoque e Impressão de Nota Fiscal**, uma solução desenvolvida para facilitar o controle de estoque e a emissão de notas fiscais de maneira prática e eficiente. Este sistema permite a gestão de produtos, clientes, vendas, e gera relatórios detalhados, incluindo gráficos de lucros, além de facilitar a integração com o WhatsApp para suporte ao cliente.
 
 ---
 
+## 📸 **Imagens do Sistema**
+
+### 1. **Modal de Login**
+![Modal de Login](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img1.png)
+
+### 2. **Pop-up do WhatsApp**
+![Pop-up do WhatsApp](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img2.png)
+
+### 3. **Área do Administrador**
+![Área do Administrador](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img3.png)
+
+### 4. **Modal de Produto**
+![Modal de Produto](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img4.png)
+
+### 5. **Cadastro do Produto no Estoque**
+![Cadastro do Produto no Estoque](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img5.png)
+
+### 6. **Cadastro do Cliente**
+![Cadastro do Cliente](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img6.png)
+
+### 7. **Exibição dos Clientes**
+![Exibição dos Clientes](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img7.png)
+
+### 8. **Exibição do Estoque**
+![Exibição do Estoque](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img8.png)
+
+### 9. **Detalhes de um Produto no Estoque**
+![Detalhes de Produto no Estoque](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img9.png)
+
+### 10. **Edição de Produto**
+![Edição de Produto](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img10.png)
+
+### 11. **Geração de Nota Fiscal**
+![Geração de Nota Fiscal](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img11.png)
+
+### 12. **Exibição das Notas Fiscais**
+![Exibição das Notas Fiscais](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img12.png)
+<p>Soma total do valor bruto e soma total do lucro líquido.</p>
+
+### 13. **Nota Fiscal Gerada**
+![Nota Fiscal Gerada](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img13.png)
+
+### 14. **Gráfico de Lucro** (dados fictícios)
+![Gráfico de Lucro](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img14.png)
+
+---
+
+## 🚀 **[Dev's tech]** 
+
+![Logo da Equipe](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/logo.png)
+
+Somos a **[Dev's tech]**, uma equipe apaixonada por inovação e comprometida em oferecer soluções eficientes e eficazes. Nosso projeto visa melhorar a gestão de estoque e a geração de documentos fiscais, utilizando as tecnologias mais recentes para proporcionar uma experiência de usuário de alto nível.
+
+---
+<!--
 ## 👥 **Nossos Colaboradores**
 
-A seguir, você vai conhecer cada um dos membros da nossa equipe e suas contribuições para o projeto.
-
----
+Abaixo, apresentamos os membros da nossa equipe e suas contribuições para o desenvolvimento do sistema.
 
 ### 🎉 **[Nome do Colaborador 1]**
 
@@ -26,7 +77,7 @@ A seguir, você vai conhecer cada um dos membros da nossa equipe e suas contribu
   - **GitHub**: [@GitHub_Username](https://github.com/username)
   - **LinkedIn**: [@LinkedIn_Username](https://linkedin.com/in/username)
   - **Twitter**: [@Twitter_Username](https://twitter.com/username)
-  
+
 ---
 
 ### 🎉 **[Nome do Colaborador 2]**
@@ -61,18 +112,18 @@ A seguir, você vai conhecer cada um dos membros da nossa equipe e suas contribu
 
 ## 🌟 **Sobre a Equipe**
 
-A **[Nome da Equipe]** foi formada em [ano de formação ou início do projeto]. Nossa missão é [descrição da missão e visão da equipe]. Juntos, trabalhamos em diversos projetos, combinando talentos e experiências para criar soluções inovadoras e de alto impacto.
+A **[Nome da Equipe]** foi formada em [ano de formação ou início do projeto]. Nossa missão é [descrição da missão e visão da equipe]. Trabalhamos juntos para oferecer soluções inovadoras, com foco em qualidade, desempenho e experiência do usuário.
 
 ### 💡 **Nossos Valores**
-- **Inovação**: Buscamos sempre novas soluções e ideias.
-- **Colaboração**: Acreditamos no poder da equipe.
-- **Qualidade**: A qualidade é nossa prioridade.
+- **Inovação**: Estamos sempre buscando novas formas de melhorar.
+- **Colaboração**: O trabalho em equipe é nossa chave para o sucesso.
+- **Qualidade**: Priorizamos a excelência em todos os aspectos do nosso trabalho.
 
 ---
 
 ## 👏 **Agradecimentos Especiais**
 
-Gostaríamos de agradecer a todos os membros da nossa equipe pelo esforço, dedicação e paixão pelo que fazemos. Cada contribuição é valiosa e torna nosso trabalho mais significativo!
+Queremos agradecer a todos os membros da equipe pelo seu esforço e dedicação. Cada contribuição é fundamental para o sucesso do projeto. Estamos muito orgulhosos do que alcançamos juntos!
 
 ---
 
@@ -81,4 +132,4 @@ Gostaríamos de agradecer a todos os membros da nossa equipe pelo esforço, dedi
 - **Site da Equipe**: [Link para o site (se houver)](https://site-da-equipe.com)
 
 ---
-
+-->
