@@ -229,7 +229,7 @@
                 <div class="modal-body p-0">
                     <div class="container">
                         <h1 style="text-align:center;">Cadastro de Cliente
-                        <a href="./" class="btn btn-danger float-end">VOLTAR</a>
+                        <a href="./" class="btn btn-danger float-end">Voltar</a>
                         </h1>
                         <form action="code.php" method="post">
                             <div class="form-group">

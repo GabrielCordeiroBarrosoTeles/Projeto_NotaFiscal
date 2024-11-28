@@ -76,7 +76,7 @@
                                 <form action="code.php" method="POST" enctype="multipart/form-data">
                                     <input type="hidden" name="estoque_id" value="<?= $estoque['id']; ?>">
                                     <div class="mb-3">
-                                        <img class="form" height="250px" id="preview-imagem" src="<?= $estoque['imagem']; ?>"><br>
+                                        <img class="form" height="250px" id="preview-imagem" src="../img/estoque/<?= $estoque['imagem']; ?>"><br>
                                         <label for="imagem_caminho" class="form-label">Caminho da imagem</label>
                                         <input type="text" name="imagem_caminho" value="<?= $estoque['imagem']; ?>" class="form-control" id="nome" oninput="updateImagemPreview(this.value)" required>
                                     </div>
