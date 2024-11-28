@@ -1,12 +1,42 @@
 # 🌟 **Sistema de Gerenciamento de Estoque e Impressão de Nota Fiscal**
 
+---
+
+## 🚀 **Próximas Atualizações!**
+
+### 🔧 **Ajustes a serem realizados**
+1. **Ajustar os arquivos**:  
+   - `cadastrar_usuario.php`  
+   - `cadastro.php`  
+
+2. **Mover os arquivos ajustados para a pasta**:  
+   - `adm/`  
+
+### 🛠️ **Implementar hierarquia de usuários**
+- **Níveis de usuários e permissões**:
+  - **Usuário Comum**:
+    - Apenas visualização de informações limitadas.
+  - **Operador**:
+    - Realizar vendas (gerando notas fiscais).
+    - Cadastrar clientes e produtos no estoque.
+  - **Administrador (ADM)**:
+    - Adicionar, editar e deletar:
+      - Cadastros de clientes e usuários.
+      - Produtos no estoque.
+      - Notas fiscais geradas.
+
+### ⚠️ **Objetivo**
+- Melhorar o controle e a segurança do sistema, garantindo que cada tipo de usuário tenha permissões específicas de acordo com suas funções.
+
+---
+
 ## Observação:
 O arquivo SQL não foi enviado junto ao projeto, mas se você tiver interesse em mexer nele, pode me chamar no WhatsApp!
 
 📲 **Entre em contato no WhatsApp**:  
 [Enviar mensagem para o WhatsApp](http://wa.me/5585997752571)
 
-
+---
 
 ![Logo do Sistema](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img0.png)
 
@@ -61,13 +91,12 @@ Bem-vindo ao **Sistema de Gerenciamento de Estoque e Impressão de Nota Fiscal**
 
 ---
 
-## 🚀 **[Dev's tech]** 
+## 🚀 **[Dev's tech]**
 
 ![Logo da Equipe](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/logo.png)
 
 Somos a **[Dev's tech]**, uma equipe apaixonada por inovação e comprometida em oferecer soluções eficientes e eficazes. Nosso projeto visa melhorar a gestão de estoque e a geração de documentos fiscais, utilizando as tecnologias mais recentes para proporcionar uma experiência de usuário de alto nível.
 
----
 <!--
 ## 👥 **Nossos Colaboradores**
 
