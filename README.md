@@ -38,7 +38,7 @@ O arquivo SQL não foi enviado junto ao projeto, mas se você tiver interesse em
 
 ---
 
-![Logo do Sistema](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img0.png)
+![Logo do Sistema](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img0.png)
 
 Bem-vindo ao **Sistema de Gerenciamento de Estoque e Impressão de Nota Fiscal**, uma solução desenvolvida para facilitar o controle de estoque e a emissão de notas fiscais de maneira prática e eficiente. Este sistema permite a gestão de produtos, clientes, vendas, e gera relatórios detalhados, incluindo gráficos de lucros, além de facilitar a integração com o WhatsApp para suporte ao cliente.
 
@@ -47,53 +47,53 @@ Bem-vindo ao **Sistema de Gerenciamento de Estoque e Impressão de Nota Fiscal**
 ## 📸 **Imagens do Sistema**
 
 ### 1. **Modal de Login**
-![Modal de Login](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img1.png)
+![Modal de Login](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img1.png)
 
 ### 2. **Pop-up do WhatsApp**
-![Pop-up do WhatsApp](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img2.png)
+![Pop-up do WhatsApp](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img2.png)
 
 ### 3. **Área do Administrador**
-![Área do Administrador](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img3.png)
+![Área do Administrador](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img3.png)
 
 ### 4. **Modal de Produto**
-![Modal de Produto](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img4.png)
+![Modal de Produto](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img4.png)
 
 ### 5. **Cadastro do Produto no Estoque**
-![Cadastro do Produto no Estoque](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img5.png)
+![Cadastro do Produto no Estoque](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img5.png)
 
 ### 6. **Cadastro do Cliente**
-![Cadastro do Cliente](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img6.png)
+![Cadastro do Cliente](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img6.png)
 
 ### 7. **Exibição dos Clientes**
-![Exibição dos Clientes](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img7.png)
+![Exibição dos Clientes](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img7.png)
 
 ### 8. **Exibição do Estoque**
-![Exibição do Estoque](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img8.png)
+![Exibição do Estoque](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img8.png)
 
 ### 9. **Detalhes de um Produto no Estoque**
-![Detalhes de Produto no Estoque](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img9.png)
+![Detalhes de Produto no Estoque](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img9.png)
 
 ### 10. **Edição de Produto**
-![Edição de Produto](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img10.png)
+![Edição de Produto](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img10.png)
 
 ### 11. **Geração de Nota Fiscal**
-![Geração de Nota Fiscal](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img11.png)
+![Geração de Nota Fiscal](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img11.png)
 
 ### 12. **Exibição das Notas Fiscais**
-![Exibição das Notas Fiscais](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img12.png)
+![Exibição das Notas Fiscais](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img12.png)
 <p>Soma total do valor bruto e soma total do lucro líquido.</p>
 
 ### 13. **Nota Fiscal Gerada**
-![Nota Fiscal Gerada](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img13.png)
+![Nota Fiscal Gerada](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img13.png)
 
 ### 14. **Gráfico de Lucro** (dados fictícios)
-![Gráfico de Lucro](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/img14.png)
+![Gráfico de Lucro](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img14.png)
 
 ---
 
 ## 🚀 **[Dev's tech]**
 
-![Logo da Equipe](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Img_pjt_nf-main/refs/heads/main/logo.png)
+![Logo da Equipe](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/logo.png)
 
 Somos a **[Dev's tech]**, uma equipe apaixonada por inovação e comprometida em oferecer soluções eficientes e eficazes. Nosso projeto visa melhorar a gestão de estoque e a geração de documentos fiscais, utilizando as tecnologias mais recentes para proporcionar uma experiência de usuário de alto nível.
 
