@@ -4,7 +4,7 @@
 O arquivo SQL não foi enviado junto ao projeto, mas se você tiver interesse em mexer nele, pode me chamar no WhatsApp!
 
 📲 **Entre em contato no WhatsApp**:  
-[Enviar mensagem para o WhatsApp](http://whatsapp.me/5585997752571)
+[Enviar mensagem para o WhatsApp](http://whatsapp.me/55859997752571)
 
 
 
