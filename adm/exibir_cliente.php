@@ -42,7 +42,9 @@
                 <div class="card">
                     <div class="card-header">
                         <h4>Detalhes do cliente
-                            <a data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-primary float-end">Adicionar Cliente</a>
+                            <?php if (isset($_SESSION['user_cargo']) && $_SESSION['user_cargo'] === 'adm'): ?>
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-primary float-end">Adicionar Cliente</a>
+                            <?php endif; ?>
                         </h4>
                     </div>
                     <div class="card-body table-responsive">
@@ -53,10 +55,14 @@
                                     <th>ID</th>
                                     <th>Nome</th>
                                     <th>CPF</th>
-                                    <th>Gerar NF</th>
+                                    <?php if (isset($_SESSION['user_cargo']) && ($_SESSION['user_cargo'] === 'adm' || $_SESSION['user_cargo'] === 'operador')): ?>
+                                        <th>Gerar NF</th>
+                                    <?php endif; ?>
                                     <th>Visualizar</th>
-                                    <th>Editar</th>
-                                    <th>Deletar</th>
+                                    <?php if (isset($_SESSION['user_cargo']) && $_SESSION['user_cargo'] === 'adm'): ?>
+                                        <th>Editar</th>
+                                        <th>Deletar</th>
+                                    <?php endif; ?>
 
                                 </tr>
                             </thead>
@@ -74,7 +80,9 @@
                                                 <td><?= $student['id']; ?></td>
                                                 <td><?= $student['nome']; ?></td>
                                                 <td><?= $student['cpf']; ?></td>
-                                                <td>
+
+                                                <?php if (isset($_SESSION['user_cargo']) && ($_SESSION['user_cargo'] === 'adm' || $_SESSION['user_cargo'] === 'operador')): ?>
+                                                    <td>
                                                     <a href="gerar_nota_fiscal.php?id=<?= $student['id']; ?>" class="btn btn-warning btn-sm">
                                                         Gerar NF
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-receipt" viewBox="0 0 16 16">
@@ -83,6 +91,8 @@
                                                         </svg>
                                                     </a>
                                                 </td>
+                                                <?php endif; ?>
+                                            
                                                 <td>
                                                     <a href="cliente-view.php?id=<?= $student['id']; ?>" class="btn btn-primary btn-sm">
                                                         Vizualizar
@@ -92,6 +102,9 @@
                                                         </svg>
                                                     </a>
                                                 </td>
+
+
+                                                <?php if (isset($_SESSION['user_cargo']) && $_SESSION['user_cargo'] === 'adm'): ?>
                                                 <td> 
                                                     <a href="cliente-edit.php?id=<?= $student['id']; ?>" class="btn btn-success btn-sm">
                                                         Editar
@@ -110,6 +123,7 @@
                                                         </button>
                                                     </form>
                                                 </td>
+                                                <?php endif; ?>
                                             </tr>
                                             <?php
                                         }

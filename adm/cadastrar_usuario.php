@@ -16,12 +16,13 @@ if ($mysqli->connect_error) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Recebe o login e a senha do formulário
+    // Recebe os dados do formulário
     $login = $_POST['login'];
     $senha = $_POST['senha'];
+    $cargo = $_POST['cargo']; // Captura o valor do checkbox
 
     // Validar se os campos não estão vazios
-    if (empty($login) || empty($senha)) {
+    if (empty($login) || empty($senha) || empty($cargo)) {
         echo "Preencha todos os campos.";
         exit();
     }
@@ -30,15 +31,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $senha_hash = password_hash($senha, PASSWORD_BCRYPT);
 
     // Preparar a consulta para inserir os dados no banco de dados
-    $sql = "INSERT INTO usuario (login, senha) VALUES (?, ?)";
+    $sql = "INSERT INTO usuario (login, senha, cargo) VALUES (?, ?, ?)";
     $stmt = $mysqli->prepare($sql);
-    $stmt->bind_param("ss", $login, $senha_hash);  // "ss" significa que ambos são strings
+    $stmt->bind_param("sss", $login, $senha_hash, $cargo); // "sss" indica 3 strings
     $stmt->execute();
 
     if ($stmt->affected_rows > 0) {
         echo "Usuário cadastrado com sucesso!";
+        // Aguarda 3 segundos e redireciona para o home.php
+        header("refresh:3;url=home.php");
     } else {
         echo "Erro ao cadastrar o usuário.";
+        // Aguarda 3 segundos e redireciona para o home.php
+        header("refresh:3;url=home.php");
     }
 
     // Fechar a conexão

@@ -110,25 +110,34 @@
                     <li class="nav-item">
                         <a class="nav-link" href="home.php" style="color:black;">Home</a>
                     </li> 
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal1"  aria-hidden="true" style="color:black;">Cad. estoque</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal2"  aria-hidden="true" style="color:black;">Cad. cliente</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="exibir_cliente.php" style="color:black;">Exibir cliente</a>
-                    </li>
+                    <?php if (isset($_SESSION['user_cargo']) && ($_SESSION['user_cargo'] === 'adm' || $_SESSION['user_cargo'] === 'operador')): ?>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal1"  aria-hidden="true" style="color:black;">Cad. estoque</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal2"  aria-hidden="true" style="color:black;">Cad. cliente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="exibir_cliente.php" style="color:black;">Exibir cliente</a>
+                        </li>
+                    <?php endif; ?>
+
+                    <?php if (isset($_SESSION['user_cargo']) && ($_SESSION['user_cargo'] === 'adm' )): ?>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal3"  aria-hidden="true" style="color:black;">Cad. Usuario</a>
+                        </li>
+                    <?php endif; ?>
                     <li class="nav-item">
                         <a class="nav-link" href="exibir.php" style="color:black;">Exibir estoque</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="exibir_notasfiscais.php" style="color:black;">Exibir NF</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gerar_nota_fiscal.php" style="color:black;">Gerar NF</a>
-                    </li>
-                    
+                    <?php if (isset($_SESSION['user_cargo']) && ($_SESSION['user_cargo'] === 'adm' || $_SESSION['user_cargo'] === 'operador')): ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="exibir_notasfiscais.php" style="color:black;">Exibir NF</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gerar_nota_fiscal.php" style="color:black;">Gerar NF</a>
+                        </li>
+                    <?php endif; ?>
                 </ul>
                 <a href="logout.php" style="background-color: #8B4513;border: #8B4513" class="btn btn-brand ms-lg-3 text-light">
                     Sair
@@ -260,6 +269,49 @@
             </div>
         </div>
     </div>
+
+
+<!-- Modal Cadastro Usuário -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <div class="container">
+                    <h1 style="text-align:center;">Cadastro de Usuário
+                        <a href="./" class="btn btn-danger float-end">Voltar</a>
+                    </h1>
+                    <form action="cadastrar_usuario.php" method="post">
+                        <div class="form-group">
+                            <label for="login">Login:</label>
+                            <input type="text" class="form-control" id="login" name="login" placeholder="Digite o login" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="senha">Senha:</label>
+                            <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite a senha" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Cargo:</label><br>
+                            <input type="radio" name="cargo" value="cliente" id="cliente" required> Cliente
+                            <br>
+                            <input type="radio" name="cargo" value="operador" id="operador" required> Operador
+                            <br>
+                            <input type="radio" name="cargo" value="adm" id="adm" required> Administrador
+                        </div>
+
+                        <div style="text-align:center;">
+                            <br>
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                            <br>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
     <script>
         const dataAtual = new Date();
         const anoAtual = dataAtual.getFullYear();

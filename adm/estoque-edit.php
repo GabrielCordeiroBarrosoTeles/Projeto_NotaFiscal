@@ -1,9 +1,16 @@
 <?php
     // Inclui a verificação de sessão, que deve ser o primeiro a ser chamado
-    require 'session_check.php'; // Corrija o caminho caso o arquivo 'session_check.php' esteja em outro diretório
+    require 'session_check.php'; 
 
     // Inclua a conexão com o banco de dados, se necessário
     require '../dbcon.php';
+
+     // Verificação de cargo
+     if (!isset($_SESSION['user_cargo']) || $_SESSION['user_cargo'] !== 'adm') {
+        // Redirecione para uma página de erro ou exiba uma mensagem de acesso negado
+        header('Location: erro_acesso.php'); // Página de erro personalizada
+        exit(); // Encerra a execução do script
+    }
 ?>
  
 

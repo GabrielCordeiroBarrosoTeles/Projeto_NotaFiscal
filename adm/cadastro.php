@@ -1,4 +1,3 @@
-<!-- cadastro.php -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,6 +14,18 @@
 
         <label for="senha">Senha:</label>
         <input type="password" name="senha" id="senha" required>
+        <br><br>
+
+        <label>Cargo:</label>
+        <br>
+        <input type="radio" name="cargo" value="cliente" id="cliente" required>
+        <label for="cliente">Cliente</label>
+        <br>
+        <input type="radio" name="cargo" value="operador" id="operador" required>
+        <label for="operador">Operador</label>
+        <br>
+        <input type="radio" name="cargo" value="adm" id="adm" required>
+        <label for="adm">Administrador</label>
         <br><br>
 
         <button type="submit">Cadastrar</button>

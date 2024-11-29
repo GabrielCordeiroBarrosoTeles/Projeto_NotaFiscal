@@ -41,72 +41,95 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<section class="container">
-    <h3  style="text-align: center;" id="eventos">Possibilidades</h3><br>
-    <div class="row row-cols-3 row-cols-md-6 g-6">
+<?php if (isset($_SESSION['user_cargo']) && ($_SESSION['user_cargo'] === 'adm' || $_SESSION['user_cargo'] === 'operador')): ?>
+    <section class="container">
+        <h3  style="text-align: center;" id="eventos">Possibilidades</h3><br>
+        <div class="row row-cols-3 row-cols-md-6 g-6">
 
-        <div class="col">
-            <div class="card" id="card">
-                <img src="img/cadastro estoque.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><span data-bs-toggle="modal" data-bs-target="#exampleModal1"  style="background-color: #8B4513;border: #8B4513" class="btn btn-brand ms-lg-3 text-light">Cad.Estoque</span></h5>
-                    <p class="card-text" id="cardtext"></p>
+            <div class="col">
+                <div class="card" id="card">
+                    <img src="img/cadastro estoque.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><span data-bs-toggle="modal" data-bs-target="#exampleModal1"  style="background-color: #8B4513;border: #8B4513" class="btn btn-brand ms-lg-3 text-light">Cad.Estoque</span></h5>
+                        <p class="card-text" id="cardtext"></p>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="col">
-            <div class="card" id="card">
-                <img src="img/cadastro cliente.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><span data-bs-toggle="modal" data-bs-target="#exampleModal2"  style="background-color: #8B4513;border: #8B4513" class="btn btn-brand ms-lg-3 text-light">Cad.Cliente</span></h5>
-                    <p class="card-text" id="cardtext"></p>
+            
+            <div class="col">
+                <div class="card" id="card">
+                    <img src="img/cadastro cliente.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><span data-bs-toggle="modal" data-bs-target="#exampleModal2"  style="background-color: #8B4513;border: #8B4513" class="btn btn-brand ms-lg-3 text-light">Cad.Cliente</span></h5>
+                        <p class="card-text" id="cardtext"></p>
+                    </div>
                 </div>
             </div>
-        </div>
-               
-        <div class="col">
-            <div class="card" id="card">
-                <img src="img/gerar nota fiscal.png" class="card-img-top" alt="..." >
-                <div class="card-body">
-                    <h5 class="card-title"><a href="gerar_nota_fiscal.php" style="background-color: #8B4513;border: #8B4513" class="btn btn-brand ms-lg-3 text-light">Ger.NF</a></h5>
-                    <p class="card-text" id="cardtext"></p>
-                </div>
-            </div>
-        </div>
                 
-        <div class="col">
-            <div class="card"  id="card">
-                <img src="img/exibir cliente.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" ><a href="exibir_cliente.php" style="background-color: #8B4513;border: #8B4513" class="btn btn-brand ms-lg-3 text-light">Exib.Cliente</a></h5>
-                    <p class="card-text" id="cardtext"></p>
+            <div class="col">
+                <div class="card" id="card">
+                    <img src="img/gerar nota fiscal.png" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="gerar_nota_fiscal.php" style="background-color: #8B4513;border: #8B4513" class="btn btn-brand ms-lg-3 text-light">Ger.NF</a></h5>
+                        <p class="card-text" id="cardtext"></p>
+                    </div>
                 </div>
             </div>
-        </div>
+                    
+            <div class="col">
+                <div class="card"  id="card">
+                    <img src="img/exibir cliente.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" ><a href="exibir_cliente.php" style="background-color: #8B4513;border: #8B4513" class="btn btn-brand ms-lg-3 text-light">Exib.Cliente</a></h5>
+                        <p class="card-text" id="cardtext"></p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="col">
-            <div class="card" id="card">
-                <img src="img/exibir estoque.png" class="card-img-top" alt="..." >
-                <div class="card-body">
-                    <h5 class="card-title"><a href="exibir.php" style="background-color: #8B4513;border: #8B4513" class="btn btn-brand ms-lg-3 text-light">Exib.Estoque</a></h5>
-                    <p class="card-text" id="cardtext"></p>
+            <div class="col">
+                <div class="card" id="card">
+                    <img src="img/exibir estoque.png" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="exibir.php" style="background-color: #8B4513;border: #8B4513" class="btn btn-brand ms-lg-3 text-light">Exib.Estoque</a></h5>
+                        <p class="card-text" id="cardtext"></p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col">
-            <div class="card" id="card">
-                <img src="img/exibir nota fiscal.png" class="card-img-top" alt="..." >
-                <div class="card-body">
-                    <h5 class="card-title"><a href="exibir_notasfiscais.php" style="background-color: #8B4513;border: #8B4513" class="btn btn-brand ms-lg-3 text-light">Exib.NF</a></h5>
-                    <p class="card-text" id="cardtext"></p>
+            <div class="col">
+                <div class="card" id="card">
+                    <img src="img/exibir nota fiscal.png" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="exibir_notasfiscais.php" style="background-color: #8B4513;border: #8B4513" class="btn btn-brand ms-lg-3 text-light">Exib.NF</a></h5>
+                        <p class="card-text" id="cardtext"></p>
+                    </div>
                 </div>
             </div>
+                    
         </div>
-                
-    </div>
-</section>
+    </section>
+<?php endif; ?>
+
+<?php if (isset($_SESSION['user_cargo']) && ($_SESSION['user_cargo'] === 'cliente' )): ?>
+    <section class="container my-5">
+        <h3 class="text-center text-dark mb-4" id="eventos">Possibilidades</h3>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+
+            <div class="col">
+                <div class="card shadow-sm border-0">
+                    <img src="img/exibir estoque.png" class="card-img-top" alt="Imagem do Estoque">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">
+                            <a href="exibir.php" class="btn btn-brand text-light" style="background-color: #8B4513; border: none;">Exib.Estoque</a>
+                        </h5>
+                        <p class="card-text" id="cardtext"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<?php endif; ?>
 
 <?php
     //$funcao = "Anti-Inflamatórios";

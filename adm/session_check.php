@@ -19,4 +19,18 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     header('Location: ../index.php');
     exit();
 }
+
+// Define as variáveis com base no cargo do usuário
+$cargo = $_SESSION['user_cargo'] ?? '';
+
+$isCliente = ($cargo === 'cliente');
+$isOperador = ($cargo === 'operador');
+$isAdm = ($cargo === 'adm');
+
+// Exemplo de uso: restrição de acesso com base no cargo
+if (!$isAdm && !$isOperador) {
+    echo "<script>alert('Você não tem permissão para acessar esta página!');</script>";
+    header('Location: ../index.php'); // Redireciona se não for admin
+    exit();
+}
 ?>

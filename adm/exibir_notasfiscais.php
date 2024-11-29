@@ -4,6 +4,14 @@
 
     // Inclua a conexão com o banco de dados, se necessário
     require '../dbcon.php';
+
+    // Verificação de cargo
+    if (!isset($_SESSION['user_cargo']) || !in_array($_SESSION['user_cargo'], ['adm', 'operador'])) {
+        // Redirecione para uma página de erro ou exiba uma mensagem de acesso negado
+        header('Location: erro_acesso.php'); // Página de erro personalizada
+        exit(); // Encerra a execução do script
+    }
+
 ?>
  
 
@@ -69,7 +77,10 @@
                                 <th>F. pagamento</th>
                                 <th>Data</th>
                                 <th>Imprimir</th>
-                                <th>Deletar</th>
+                                <?php if (isset($_SESSION['user_cargo']) && $_SESSION['user_cargo'] === 'adm'): ?>
+                                    <th>Deletar</th>
+                                <?php endif; ?>
+
                             </tr>
                         </thead>
                         <tbody>
@@ -113,7 +124,10 @@
                                 echo '<td>' . $forma_de_pagamento . '</td>';
                                 echo '<td>' . $dataNota . '</td>';
                                 echo '<td><a href="imprimir_nota_fiscal.php?arquivo=' . urlencode($caminhoArquivo) . '" class="btn btn-primary"><i class="fa fa-print"></i> Imprimir</a></td>';
-                                echo '<td><button class="btn btn-danger delete-button" data-file="' . urlencode($caminhoArquivo) . '"><i class="fa fa-trash"></i> Deletar</button></td>';
+                                 if (isset($_SESSION['user_cargo']) && $_SESSION['user_cargo'] === 'adm'): 
+                                    echo '<td><button class="btn btn-danger delete-button" data-file="' . urlencode($caminhoArquivo) . '"><i class="fa fa-trash"></i> Deletar</button></td>';
+                                endif;
+                                
                                 echo '</tr>';
                             }
                             ?>

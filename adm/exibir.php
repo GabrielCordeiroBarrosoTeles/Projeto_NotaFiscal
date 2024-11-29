@@ -4,6 +4,10 @@
 
     // Inclua a conexão com o banco de dados, se necessário
     require '../dbcon.php';
+
+    // Verifica se a sessão tem o cargo definido
+    $cargoUsuario = isset($_SESSION['user_cargo']) ? $_SESSION['user_cargo'] : 'Indefinido';
+
 ?>
  
 
@@ -46,7 +50,9 @@
             <div class="card">
                 <div class="card-header">
                     <h4>Estoque
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal1" class="btn btn-primary float-end">Adicionar ao Estoque</a>
+                        <?php if (isset($_SESSION['user_cargo']) && $_SESSION['user_cargo'] === 'adm'): ?>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal1" class="btn btn-primary float-end">Adicionar ao Estoque</a>
+                        <?php endif; ?>
                     </h4>
                 </div>
                 <div class="card-body table-responsive">
@@ -59,13 +65,16 @@
                                 <th>Função</th>
                                 <th>Valor de Venda</th>
                                 <th>Quantidade</th>
-                                <th>Vendido</th>
+                                <?php if (isset($_SESSION['user_cargo']) && $_SESSION['user_cargo'] === 'adm'): ?>
+                                    <th>Vendido</th>
+                                <?php endif; ?>
                                 <th>Marca</th>
                                 <th>Peso</th>
                                 <th>Visualizar</th>
-                                <th>Editar</th>
-                                
-                                <th>Deletar</th>
+                                <?php if (isset($_SESSION['user_cargo']) && $_SESSION['user_cargo'] === 'adm'): ?>
+                                    <th>Editar</th>
+                                    <th>Deletar</th>
+                                <?php endif; ?>
                             </tr>
                         </thead>
                         <tbody>
@@ -93,7 +102,9 @@
                                         <td><?= $estoque['funcao']; ?></td>
                                         <td>R$ <?= $v_venda; ?></td>
                                         <td><?= $qtd; ?></td>
-                                        <td><?= $vendido; ?></td>
+                                        <?php if (isset($_SESSION['user_cargo']) && $_SESSION['user_cargo'] === 'adm'): ?>
+                                            <td><?= $vendido; ?></td>
+                                        <?php endif; ?>
                                         <td><?= $estoque['marca']; ?></td>
                                         <td><?= $estoque['peso']; ?></td>
                                         
@@ -106,6 +117,7 @@
                                                 </svg>
                                             </a>
                                         </td>
+                                        <?php if (isset($_SESSION['user_cargo']) && $_SESSION['user_cargo'] === 'adm'): ?>
                                         <td>
                                             <a href="estoque-edit.php?id=<?= $estoque['id']; ?>" class="btn btn-success btn-sm">
                                                 Editar
@@ -114,7 +126,6 @@
                                                 </svg>
                                             </a>
                                         </td>
-                            
                                         <td>
                                             <form action="code.php" method="POST" class="d-inline">
                                                 <button type="submit" name="delete_estoque" value="<?= $estoque['id']; ?>" class="btn btn-danger btn-sm">
@@ -122,13 +133,13 @@
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
                                                         <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
                                                     </svg>    
-                                                    
                                                 </button>
                                             </form>
-                                        </td>
+                                            </td>
+                                        <?php endif; ?>
                                     </tr>
                                     <?php
-                                }
+                                }                                                                                   
                             } else {
                                 echo "<h5>Nenhum aluno cadastrado</h5>";
                             }

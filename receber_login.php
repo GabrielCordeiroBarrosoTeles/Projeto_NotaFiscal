@@ -43,7 +43,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['logged_in'] = true;
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['user_login'] = $user['login'];
-            $_SESSION['welcome_message'] = 'Bem-vindo à página administrativa!'; // Armazenar a mensagem
+            $_SESSION['user_cargo'] = $user['cargo']; // Armazena o cargo do usuário na sessão
+            $_SESSION['welcome_message'] = 'Bem-vindo à página administrativa! Você é ' . $user['cargo'] . '.';
+
             header('Location: adm/home.php'); // Redirecionar para home
             // Código da página de administração (home.php)
             

@@ -4,6 +4,13 @@
 
     // Inclua a conexão com o banco de dados, se necessário
     require '../dbcon.php';
+
+    // Verificação de cargo
+    if (!isset($_SESSION['user_cargo']) || $_SESSION['user_cargo'] !== 'adm') {
+        // Redirecione para uma página de erro ou exiba uma mensagem de acesso negado
+        header('Location: erro_acesso.php'); // Página de erro personalizada
+        exit(); // Encerra a execução do script
+    }
 ?>
  
 
