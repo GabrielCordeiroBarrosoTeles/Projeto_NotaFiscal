@@ -21,5 +21,7 @@ if(isset($_GET['arquivo'])){
     }
 } else {
     echo "Erro ao excluir a nota fiscal: arquivo não especificado.";
-}
+} 
+
+
 ?>
