@@ -109,63 +109,65 @@ Bem-vindo ao **Sistema de Gerenciamento de Estoque e Impressão de Nota Fiscal**
 
 ## 🚀 **[Dev's tech]**
 
-![Logo da Equipe](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/logo.png)
+<div style="text-align: center;"> <img src="https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/logo.png" alt="Logo da Equipe" style="width: 150px; height: auto;"> </div>
 
 Somos a **[Dev's tech]**, uma equipe apaixonada por inovação e comprometida em oferecer soluções eficientes e eficazes. Nosso projeto visa melhorar a gestão de estoque e a geração de documentos fiscais, utilizando as tecnologias mais recentes para proporcionar uma experiência de usuário de alto nível.
 
-<!--
+
+
+---
+
 ## 👥 **Nossos Colaboradores**
 
-Abaixo, apresentamos os membros da nossa equipe e suas contribuições para o desenvolvimento do sistema.
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; text-align: center;">
 
-### 🎉 **[Nome do Colaborador 1]**
+<div style="width: 45%; margin: 10px;">
+  <img src="https://avatars.githubusercontent.com/u/98492418?v=4" alt="Foto de Gabriel" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;">
+  <p><strong>Gabriel Cordeiro Barroso Teles</strong></p>
+  <p>
+    <a href="https://github.com/GabrielCordeiroBarrosoTeles">GitHub</a> | 
+    <a href="https://www.linkedin.com/in/gabriel-cordeiro-barroso">LinkedIn</a>
+  </p>
+</div>
 
-![Foto de Perfil](URL_da_foto_do_colaborador1)
+<div style="width: 45%; margin: 10px;">
+  <img src="https://avatars.githubusercontent.com/u/48100360?v=4" alt="Foto de Carlos" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;">
+  <p><strong>Carlos Henrique Rodrigues de Sousa</strong></p>
+  <p>
+    <a href="https://github.com/carlosbv1">GitHub</a> | 
+    <a href="https://www.linkedin.com/in/carlos-henrique-rodrigues-de-sousa-68447468">LinkedIn</a>
+  </p>
+</div>
 
-- **Cargo/Função**: [Cargo/Função do Colaborador 1]
-- **Contribuições**:
-  - [Descreva a contribuição do colaborador 1]
-  - [Outras contribuições importantes]
-- **Redes Sociais**:
-  - **GitHub**: [@GitHub_Username](https://github.com/username)
-  - **LinkedIn**: [@LinkedIn_Username](https://linkedin.com/in/username)
-  - **Twitter**: [@Twitter_Username](https://twitter.com/username)
+<div style="width: 45%; margin: 10px;">
+  <img src="https://avatars.githubusercontent.com/u/106496648?v=4" alt="Foto de Eduardo" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;">
+  <p><strong>Eduardo Lima da Silva</strong></p>
+  <p>
+    <a href="https://github.com/Eduardo-L-Silva">GitHub</a> | 
+    <a href="https://linkedin.com/in/eduardo-lima-3b967029a">LinkedIn</a>
+  </p>
+</div>
 
----
+<div style="width: 45%; margin: 10px;">
+  <img src="https://avatars.githubusercontent.com/u/124222592?v=4" alt="Foto de Matheus" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;">
+  <p><strong>Matheus Damasceno Rocha</strong></p>
+  <p>
+    <a href="https://github.com/MatheusDamascenoRocha">GitHub</a> | 
+    <a href="https://www.linkedin.com/in/matheus-damasceno-648346272">LinkedIn</a>
+  </p>
+</div>
 
-### 🎉 **[Nome do Colaborador 2]**
-
-![Foto de Perfil](URL_da_foto_do_colaborador2)
-
-- **Cargo/Função**: [Cargo/Função do Colaborador 2]
-- **Contribuições**:
-  - [Descreva a contribuição do colaborador 2]
-  - [Outras contribuições importantes]
-- **Redes Sociais**:
-  - **GitHub**: [@GitHub_Username](https://github.com/username)
-  - **LinkedIn**: [@LinkedIn_Username](https://linkedin.com/in/username)
-  - **Twitter**: [@Twitter_Username](https://twitter.com/username)
-
----
-
-### 🎉 **[Nome do Colaborador 3]**
-
-![Foto de Perfil](URL_da_foto_do_colaborador3)
-
-- **Cargo/Função**: [Cargo/Função do Colaborador 3]
-- **Contribuições**:
-  - [Descreva a contribuição do colaborador 3]
-  - [Outras contribuições importantes]
-- **Redes Sociais**:
-  - **GitHub**: [@GitHub_Username](https://github.com/username)
-  - **LinkedIn**: [@LinkedIn_Username](https://linkedin.com/in/username)
-  - **Twitter**: [@Twitter_Username](https://twitter.com/username)
+</div>
 
 ---
+
+
 
 ## 🌟 **Sobre a Equipe**
 
-A **[Nome da Equipe]** foi formada em [ano de formação ou início do projeto]. Nossa missão é [descrição da missão e visão da equipe]. Trabalhamos juntos para oferecer soluções inovadoras, com foco em qualidade, desempenho e experiência do usuário.
+A **Dev's Tech** foi formada em 2023. Nossa missão é **transformar desafios em soluções ágeis e eficientes, automatizando processos por meio da criação de sistemas de software inovadores e funcionais**. 
+
+Visamos **melhorar a produtividade das empresas, garantindo qualidade, desempenho e uma experiência do usuário excepcional**. Trabalhamos em equipe para entregar resultados que simplificam a rotina dos nossos clientes e impulsionam o crescimento dos negócios.
 
 ### 💡 **Nossos Valores**
 - **Inovação**: Estamos sempre buscando novas formas de melhorar.
@@ -179,7 +181,7 @@ A **[Nome da Equipe]** foi formada em [ano de formação ou início do projeto].
 Queremos agradecer a todos os membros da equipe pelo seu esforço e dedicação. Cada contribuição é fundamental para o sucesso do projeto. Estamos muito orgulhosos do que alcançamos juntos!
 
 ---
-
+<!--
 ## 🔗 **Links Importantes**
 - **Repositório do Projeto**: [Link do Repositório](https://github.com/username/repository)
 - **Site da Equipe**: [Link para o site (se houver)](https://site-da-equipe.com)
