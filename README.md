@@ -4,18 +4,19 @@
 
 ## 🚀 **Próximas Atualizações!**
 
-### 🔧 **Ajustes a serem realizados**
-1. **Ajustar os arquivos**:  
+### ✅ **Ajustes Realizados**
+1. **Ajuste de Arquivos**:  
    - `cadastrar_usuario.php`  
    - `cadastro.php`  
 
-2. **Mover os arquivos ajustados para a pasta**:  
-   - `adm/`  
+2. **Estruturação de Arquivos**:  
+   - **Arquivos ajustados movidos para a pasta**:  
+     - `adm/`  
 
-### 🛠️ **Implementar hierarquia de usuários**
-- **Níveis de usuários e permissões**:
+### 🛠️ **Hierarquia de Usuários Implementada**
+- **Níveis de Usuários e Permissões**:
   - **Usuário Comum**:
-    - Apenas visualização de informações limitadas.
+    - Apenas visualização de informações limitadas (acesso restrito a determinadas áreas).
   - **Operador**:
     - Realizar vendas (gerando notas fiscais).
     - Cadastrar clientes e produtos no estoque.
@@ -27,6 +28,21 @@
 
 ### ⚠️ **Objetivo**
 - Melhorar o controle e a segurança do sistema, garantindo que cada tipo de usuário tenha permissões específicas de acordo com suas funções.
+
+---
+
+### O que foi feito:
+1. **Ajuste nas permissões de usuário**: 
+   - Agora, o sistema possui diferentes tipos de usuários: **usuário comum**, **operador** e **administrador (ADM)**, com permissões diferenciadas.
+   - O **usuário comum** pode apenas visualizar informações.
+   - O **operador** pode realizar operações como vendas e cadastros, enquanto o **administrador** tem permissões para gerenciar os dados do sistema, incluindo clientes, produtos e usuários.
+
+2. **Hierarquia de usuários**:
+   - Implementação de um sistema de controle de acessos, com base nos cargos dos usuários. O código agora controla o que cada tipo de usuário pode visualizar e acessar dentro do sistema.
+
+3. **Segurança**:
+   - Com a implementação de roles (cargos), o sistema garante que cada usuário só tenha acesso ao que é permitido para o seu cargo específico.
+
 
 ---
 
