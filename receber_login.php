@@ -46,12 +46,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['user_cargo'] = $user['cargo']; // Armazena o cargo do usuário na sessão
             $_SESSION['welcome_message'] = 'Bem-vindo à página administrativa! Você é ' . $user['cargo'] . '.';
 
+            $stmt->close();
+            $mysqli->close();
             header('Location: adm/home.php'); // Redirecionar para home
             // Código da página de administração (home.php)
             
             exit();
         } else {
             // Senha incorreta
+            $stmt->close();
+            $mysqli->close();
             $_SESSION['login_error'] = "Login ou senha incorretos!";
             sleep(1); // Adiciona atraso para evitar força bruta
             header('Location: index.php'); 
@@ -59,13 +63,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     } else {
         // Usuário não encontrado
+        $stmt->close();
+        $mysqli->close();
         $_SESSION['login_error'] = "Login ou senha incorretos!";
         sleep(1); // Adiciona atraso para evitar força bruta
         header('Location: index.php');
         exit();
     }
-
-    $stmt->close();
-    $mysqli->close();
 }
 ?>
+
