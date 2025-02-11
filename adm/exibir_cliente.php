@@ -59,8 +59,9 @@
                                         <th>Gerar NF</th>
                                     <?php endif; ?>
                                     <th>Visualizar</th>
+                                    <th>Editar</th>
                                     <?php if (isset($_SESSION['user_cargo']) && $_SESSION['user_cargo'] === 'adm'): ?>
-                                        <th>Editar</th>
+                                        
                                         <th>Deletar</th>
                                     <?php endif; ?>
 
@@ -102,9 +103,6 @@
                                                         </svg>
                                                     </a>
                                                 </td>
-
-
-                                                <?php if (isset($_SESSION['user_cargo']) && $_SESSION['user_cargo'] === 'adm'): ?>
                                                 <td> 
                                                     <a href="cliente-edit.php?id=<?= $student['id']; ?>" class="btn btn-success btn-sm">
                                                         Editar
@@ -113,6 +111,7 @@
                                                         </svg>
                                                     </a>
                                                 </td>
+                                                <?php if (isset($_SESSION['user_cargo']) && $_SESSION['user_cargo'] === 'adm'): ?>
                                                 <td> 
                                                     <form action="code.php" method="POST" class="d-inline">
                                                         <button type="submit" name="delete_cliente" value="<?=$student['id'];?>" class="btn btn-danger btn-sm">
