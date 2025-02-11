@@ -1,3 +1,7 @@
+<?php
+    require 'config.php'; // Importa as configurações do site
+?>
+
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/owl.carousel.min.css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -111,8 +115,8 @@
     <div class="container-fluid">
         <div class="d-flex flex-wrap justify-content-between align-items-center">
             <div class="col-auto">
-                <p class="contact-info mb-0"><i class='bx bxs-envelope'></i> companyname@gmail.com</p>
-                <p class="contact-info mb-0"><i class='bx bxs-phone-call'></i> (85) 9.9999-9999</p>
+                <p class="contact-info mb-0"><i class='bx bxs-envelope'></i> <?php echo $CompanyEmailAddress ; ?></p>
+                <p class="contact-info mb-0"><i class='bx bxs-phone-call'></i> <?php echo $CompanyTelephone ; ?></p>
             </div>
         </div>
     </div>
@@ -132,8 +136,9 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" style="border-bottom: 0%; z-index: 100;">
     <div class="container">
         <a class="navbar-brand" href="index.php" style="font-size: 23px; display: flex; justify-content: center; align-items: center;">
-            <img src="./img/logo.png" alt="" srcset="" style="width: 35px; margin-right: 15px">Company
-            <span class="dot" style="color: #8B4513;">&nbsp;Name</span>
+            <img src="./img/logo.png" alt="" srcset="" style="width: 35px; margin-right: 15px">
+            <!--Nome da empresa com a ultima palavra em destaque-->
+            <?php echo $PrimeiraParte . ' '; ?><span style="color: #8B4513;">&nbsp;<?php echo $UltimaPalavra; ?></span>
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

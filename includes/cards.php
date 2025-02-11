@@ -36,7 +36,7 @@
                     echo '<div class="col-lg-3 col-md-6 col-sm-6 col-6">';
                         echo '<div class="card rounded shadow-sm border-0">';
                             echo '<div class="card-body p-4">';
-                                echo '<img src="./img/estoque/'.$estoque["imagem"].'" alt="" class="img-fluid d-block mx-auto mb-3">';
+                                echo '<img src="./adm/img/estoque/'.$estoque["imagem"].'" alt="" class="img-fluid d-block mx-auto mb-3">';
                                 echo '<h5><a href="#" class="text-dark" style="text-decoration: none;">' . $estoque["nome"] . '</a></h5>';
                                 echo '<p class="small text-muted font-italic">' . $estoque["funcao"] . '</p>';
                                 echo '<h5 class="card-title">';
@@ -57,7 +57,7 @@
                                     echo '</button>';
                                 echo '</div>';
                                 echo '<div class="modal-body">';
-                                    echo '<img src="./img/estoque/'.$estoque["imagem"].'" alt="" class="img-fluid d-block mx-auto mb-3" style="max-width: 200px; max-height: 200px;">';
+                                    echo '<img src="./adm/img/estoque/'.$estoque["imagem"].'" alt="" class="img-fluid d-block mx-auto mb-3" style="max-width: 200px; max-height: 200px;">';
                                     echo '<p>Função: ' . $estoque["funcao"] . '</p>';
                                     echo '<p>Detalhe: ' . $estoque["detalhe"] . '</p>';
                                     echo '<p>Valor de Venda: ' . $estoque["valorvenda"] . '</p>';
@@ -94,7 +94,7 @@
                     echo '<div class="col-lg-3 col-md-6 col-sm-6 col-6">';
                         echo '<div class="card rounded shadow-sm border-0">';
                             echo '<div class="card-body p-4">';
-                                echo '<img src="./img/estoque/'.$estoque["imagem"].'" alt="" class="img-fluid d-block mx-auto mb-3">';
+                                echo '<img src="./adm/img/estoque/'.$estoque["imagem"].'" alt="" class="img-fluid d-block mx-auto mb-3">';
                                 echo '<h5><a href="#" class="text-dark" style="text-decoration: none;">' . $estoque["nome"] . '</a></h5>';
                                 echo '<p class="small text-muted font-italic">' . $estoque["funcao"] . '</p>';
                                 echo '<h5 class="card-title">';
@@ -115,7 +115,7 @@
                                     echo '</button>';
                                 echo '</div>';
                                 echo '<div class="modal-body">';
-                                    echo '<img src="./img/estoque/'.$estoque["imagem"].'" alt="" class="img-fluid d-block mx-auto mb-3" style="max-width: 200px; max-height: 200px;">';
+                                    echo '<img src="./adm/img/estoque/'.$estoque["imagem"].'" alt="" class="img-fluid d-block mx-auto mb-3" style="max-width: 200px; max-height: 200px;">';
                                     echo '<p>Função: ' . $estoque["funcao"] . '</p>';
                                     echo '<p>Detalhe: ' . $estoque["detalhe"] . '</p>';
                                     echo '<p>Valor de Venda: ' . $estoque["valorvenda"] . '</p>';
@@ -152,7 +152,7 @@
                     echo '<div class="col-lg-3 col-md-6 col-sm-6 col-6">';
                         echo '<div class="card rounded shadow-sm border-0">';
                             echo '<div class="card-body p-4">';
-                                echo '<img src="./img/estoque/'.$estoque["imagem"].'" alt="" class="img-fluid d-block mx-auto mb-3">';
+                                echo '<img src="./adm/img/estoque/'.$estoque["imagem"].'" alt="" class="img-fluid d-block mx-auto mb-3">';
                                 echo '<h5><a href="#" class="text-dark" style="text-decoration: none;">' . $estoque["nome"] . '</a></h5>';
                                 echo '<p class="small text-muted font-italic">' . $estoque["funcao"] . '</p>';
                                 echo '<h5 class="card-title">';
@@ -173,7 +173,7 @@
                                     echo '</button>';
                                 echo '</div>';
                                 echo '<div class="modal-body">';
-                                    echo '<img src="./img/estoque/'.$estoque["imagem"].'" alt="" class="img-fluid d-block mx-auto mb-3" style="max-width: 200px; max-height: 200px;">';
+                                    echo '<img src="./adm/img/estoque/'.$estoque["imagem"].'" alt="" class="img-fluid d-block mx-auto mb-3" style="max-width: 200px; max-height: 200px;">';
                                     echo '<p>Função: ' . $estoque["funcao"] . '</p>';
                                     echo '<p>Detalhe: ' . $estoque["detalhe"] . '</p>';
                                     echo '<p>Valor de Venda: ' . $estoque["valorvenda"] . '</p>';

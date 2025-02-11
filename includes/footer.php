@@ -1,14 +1,7 @@
 <?php
-    $LinkZap = "https://wa.me/seunumero";
-    $LinkInsta="https://instagram.com/seuusuario";
-    $LinkGoogle = "https://www.google.com/maps/@-3.6550574,-38.5317037,14z?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D";
-    $CompanyName = "Company Name";
-    $CompanyTelephone = "(85) 989999999";
-    $CompanyEmailAddress = "companyname@gmail.com";
-    // Coloquei uma localização aleatoria
-    $CompanyAddress = "Rua sla, 36 - Fortaleza - CE";
-    $IframeAddress = "<iframe src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31853.62201006965!2d-38.531703653289824!3d-3.6550574081671194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1732754417244!5m2!1spt-BR!2sbr' width='420' height='320' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+    require 'config.php'; // Importa as configurações do site
 ?>
+
 <style>
   .tra{
     color: #38AAF2;

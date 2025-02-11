@@ -1,4 +1,7 @@
 <?php
+    // Importa as configurações do site
+    require '../config.php'; 
+
     // Inclui a verificação de sessão, que deve ser o primeiro a ser chamado
     require 'session_check.php'; // Corrija o caminho caso o arquivo 'session_check.php' esteja em outro diretório
 
@@ -74,10 +77,10 @@
                 $valorTotal = isset($_POST['valorTotal']) ? $_POST['valorTotal'] : 0;
 
                 // Dados da empresa
-                $nomeEmpresa = "Company Name";
-                $cnpjEmpresa = "00.000.000/0001-00";
-                $enderecoEmpresa = " Rua sla, 36 - Fortaleza - CE";
-                $telefoneEmpresa = "(85) 989999999";
+                $nomeEmpresa = $CompanyName;
+                $cnpjEmpresa = $CompanyCNPJ;
+                $enderecoEmpresa = $CompanyAddress;
+                $telefoneEmpresa = $CompanyTelephone;
 
                 // Itens da nota fiscal
                 $itens = isset($_POST['itens']) ? $_POST['itens'] : array();
@@ -189,7 +192,7 @@ foreach ($itens as $index => $item) {
     // Adicione o cálculo do lucro ao XML
     $xml .= '<item>';
     $xml .= '<nome>'.$item.'</nome>';
-    if (stripos($item, 'ração') === 0) {
+    if (stripos($item, 'Ração') === 0) {
         if($quantidade>=1000){
             $xml .= '<quantidade>'.($quantidade/1000).'Kg</quantidade>';
         }else{

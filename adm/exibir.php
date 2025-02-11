@@ -85,7 +85,7 @@
                             if (mysqli_num_rows($query_run) > 0) {
                                 foreach ($query_run as $estoque) {
                                     $nome = $estoque['nome'];
-                                    if (stripos($nome, 'ração') === 0) {
+                                    if (stripos($estoque['funcao'], 'Ração') === 0) {
                                         $v_venda = ($estoque['valorvenda'] * 1000) . " p/Kg";
                                         $qtd = ($estoque['quantidade'] / 1000) . " Kg";
                                         $vendido = ($estoque['vendido'] / 1000) . " Kg";
@@ -97,7 +97,7 @@
                                     ?>
                                     <tr>
                                         <td><?= $estoque['id']; ?></td>
-                                        <td><img height='80px' src='../img/estoque/<?=$estoque["imagem"]?>'></td>
+                                        <td><img height='80px' src='img/estoque/<?=$estoque["imagem"]?>'></td>
                                         <td style="align-items: left;text-align: left;"><?= $estoque['nome']; ?></td>
                                         <td><?= $estoque['funcao']; ?></td>
                                         <td>R$ <?= $v_venda; ?></td>

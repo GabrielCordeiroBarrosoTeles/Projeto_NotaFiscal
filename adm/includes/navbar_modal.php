@@ -1,4 +1,7 @@
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+<?php
+    require '../config.php'; // Importa as configurações do site
+?>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
@@ -78,8 +81,8 @@
     <div class="container-fluid">
         <div class="d-flex flex-wrap justify-content-between align-items-center">
             <div class="col-auto">
-                <p class="contact-info mb-0"><i class='bx bxs-envelope'></i> companyname@gmail.com</p>
-                <p class="contact-info mb-0"><i class='bx bxs-phone-call'></i> (85) 9.9999-9999</p>
+                <p class="contact-info mb-0"><i class='bx bxs-envelope'></i> <?php echo $CompanyEmailAddress ; ?></p>
+                <p class="contact-info mb-0"><i class='bx bxs-phone-call'></i> <?php echo $CompanyTelephone ; ?></p>
             </div>
         </div>
     </div>
@@ -97,10 +100,9 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container">
             <a class="navbar-brand" href="home.php">
-            <a class="navbar-brand" href="home.php"><img src="../img/logo.png" alt="" srcset="" style="width:30px;">Company  
-                <span class="dot"  style="color: #8B4513;">
-                    Name
-                </span>
+            <a class="navbar-brand" href="home.php">
+                <img src="../img/logo.png" alt="" srcset="" style="width:30px;"><!--Nome da empresa com a ultima palavra em destaque-->
+                <?php echo $PrimeiraParte . ' '; ?><span style="color: #8B4513;">&nbsp;<?php echo $UltimaPalavra; ?></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

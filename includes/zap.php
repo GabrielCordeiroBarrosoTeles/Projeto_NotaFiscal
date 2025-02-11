@@ -1,9 +1,5 @@
 <?php
-    $CompanyName = "Company Name";
-    $CompanyTelephone = "5585989999999";
-    $MessageToSendToTheCompany = "Olá"; // Mensagem predefinida que o usuario vai te mandar
-    $MessageTheCompanyWantsToPresent = "Orçamento por whattsapp";
-    $LogoImagePath = "img/logo.png";
+    require 'config.php'; // Importa as configurações do site
 ?>
 
 <div id="whatswidget-pre-wrapper" class="">

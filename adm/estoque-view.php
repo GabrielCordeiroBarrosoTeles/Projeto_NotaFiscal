@@ -66,7 +66,7 @@
                                     $detalhe = $estoque['detalhe'];
                                     $marca = $estoque['marca'];
                                     $peso = $estoque['peso'];
-                                if (stripos($nome, 'ração') === 0) {
+                                if (stripos($estoque['funcao'], 'Ração') === 0) {
                                     $v_compra = ($estoque['valorcompra'] * 1000) . " p/Kg";
                                     $v_venda = ($estoque['valorvenda'] * 1000) . " p/Kg";
                                     $qtd = ($estoque['quantidade'] / 1000) . " Kg";
@@ -78,7 +78,7 @@
                                 ?>
                                      <div class="mb" style="text-align:center;align-items:center;">
                                         
-                                        <img class="form"  height='250px' src="../img/estoque/<?=$estoque['imagem'];?>">
+                                        <img class="form"  height='250px' src="img/estoque/<?=$estoque['imagem'];?>">
                                     </div>
                                     <div class="mb-3">
                                         <label>Nome</label>

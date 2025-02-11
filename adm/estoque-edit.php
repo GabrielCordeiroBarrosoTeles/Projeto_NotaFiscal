@@ -70,7 +70,7 @@
                             {
                                 $estoque = mysqli_fetch_array($query_run);
                                 $nome = $estoque['nome'];
-                                if (stripos($nome, 'ração') === 0) {
+                                if (stripos($estoque['funcao'], 'Ração') === 0) {
                                     $v_compra = ($estoque['valorcompra'] * 1000);
                                     $v_venda = ($estoque['valorvenda'] * 1000);
                                     $qtd = ($estoque['quantidade'] / 1000);
@@ -83,7 +83,7 @@
                                 <form action="code.php" method="POST" enctype="multipart/form-data">
                                     <input type="hidden" name="estoque_id" value="<?= $estoque['id']; ?>">
                                     <div class="mb-3">
-                                        <img class="form" height="250px" id="preview-imagem" src="../img/estoque/<?= $estoque['imagem']; ?>"><br>
+                                        <img class="form" height="250px" id="preview-imagem" src="img/estoque/<?= $estoque['imagem']; ?>"><br>
                                         <label for="imagem_caminho" class="form-label">Caminho da imagem</label>
                                         <input type="text" name="imagem_caminho" value="<?= $estoque['imagem']; ?>" class="form-control" id="nome" oninput="updateImagemPreview(this.value)" required>
                                     </div>

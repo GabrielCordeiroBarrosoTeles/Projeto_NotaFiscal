@@ -27,13 +27,13 @@
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./img/carousel_01.jpg" class="d-block w-100 carousel-img" alt="...">
+          <img src="./img/projeto1.png" class="d-block w-100 carousel-img" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./img/carousel_01.jpg" class="d-block w-100 carousel-img" alt="...">
+          <img src="./img/projeto2.png" class="d-block w-100 carousel-img" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./img/carousel_01.jpg" class="d-block w-100 carousel-img" alt="...">
+          <img src="./img/projeto3.png" class="d-block w-100 carousel-img" alt="...">
         </div>
 
 
