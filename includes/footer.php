@@ -67,7 +67,32 @@ input.form-control {
 .form-control:focus {
     box-shadow: none;
     border-color: var(--brand);
-}
+} .embed-responsive {
+    position: relative;
+    display: block;
+    width: 85%;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .embed-responsive::before {
+    display: block;
+    content: "";
+  }
+
+  .embed-responsive-16by9::before {
+    padding-top: 56.25%;
+  }
+
+  .embed-responsive-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
 </style>
 <link rel="stylesheet" href="./css/footer.css">
 </div>

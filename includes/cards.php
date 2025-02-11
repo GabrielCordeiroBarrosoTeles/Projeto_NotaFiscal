@@ -37,9 +37,9 @@
                         echo '<div class="card rounded shadow-sm border-0">';
                             echo '<div class="card-body p-4">';
                                 echo '<img src="./adm/img/estoque/'.$estoque["imagem"].'" alt="" class="img-fluid d-block mx-auto mb-3">';
-                                echo '<h5><a href="#" class="text-dark" style="text-decoration: none;">' . $estoque["nome"] . '</a></h5>';
-                                echo '<p class="small text-muted font-italic">' . $estoque["funcao"] . '</p>';
-                                echo '<h5 class="card-title">';
+                                echo '<h5><a href="#" class="text-dark text-center" style="text-decoration: none;">' . $estoque["nome"] . '</a></h5>';
+                                echo '<p class="small text-muted font-italic text-center">' . $estoque["funcao"] . '</p>';
+                                echo '<h5 class="card-title text-center">';
                                     echo '<span style="color:#ffff;background-color: #8B4513;border: #8B4513" class="btn btn-brand ms-lg-3" data-toggle="modal" data-target="#myModal' . $estoque["id"] . '">Ver Mais</span>';
                                 echo '</h5>';
                             echo '</div>';
@@ -95,9 +95,9 @@
                         echo '<div class="card rounded shadow-sm border-0">';
                             echo '<div class="card-body p-4">';
                                 echo '<img src="./adm/img/estoque/'.$estoque["imagem"].'" alt="" class="img-fluid d-block mx-auto mb-3">';
-                                echo '<h5><a href="#" class="text-dark" style="text-decoration: none;">' . $estoque["nome"] . '</a></h5>';
-                                echo '<p class="small text-muted font-italic">' . $estoque["funcao"] . '</p>';
-                                echo '<h5 class="card-title">';
+                                echo '<h5><a href="#" class="text-dark text-center" style="text-decoration: none;">' . $estoque["nome"] . '</a></h5>';
+                                echo '<p class="small text-muted font-italic text-center">' . $estoque["funcao"] . '</p>';
+                                echo '<h5 class="card-title text-center">';
                                     echo '<span style="color:#ffff;background-color: #8B4513;border: #8B4513" class="btn btn-brand ms-lg-3" data-toggle="modal" data-target="#myModal' . $estoque["id"] . '">Ver Mais</span>';
                                 echo '</h5>';
                             echo '</div>';
@@ -153,9 +153,9 @@
                         echo '<div class="card rounded shadow-sm border-0">';
                             echo '<div class="card-body p-4">';
                                 echo '<img src="./adm/img/estoque/'.$estoque["imagem"].'" alt="" class="img-fluid d-block mx-auto mb-3">';
-                                echo '<h5><a href="#" class="text-dark" style="text-decoration: none;">' . $estoque["nome"] . '</a></h5>';
-                                echo '<p class="small text-muted font-italic">' . $estoque["funcao"] . '</p>';
-                                echo '<h5 class="card-title">';
+                                echo '<h5><a href="#" class="text-dark text-center" style="text-decoration: none;">' . $estoque["nome"] . '</a></h5>';
+                                echo '<p class="small text-muted font-italic text-center">' . $estoque["funcao"] . '</p>';
+                                echo '<h5 class="card- text-center">';
                                     echo '<span style="color:#ffff;background-color: #8B4513;border: #8B4513" class="btn btn-brand ms-lg-3" data-toggle="modal" data-target="#myModal' . $estoque["id"] . '">Ver Mais</span>';
                                 echo '</h5>';
                             echo '</div>';

@@ -18,9 +18,11 @@
 
         <label>Cargo:</label>
         <br>
-        <input type="radio" name="cargo" value="cliente" id="cliente" required>
-        <label for="cliente">Cliente</label>
-        <br>
+        <!--
+            <input type="radio" name="cargo" value="cliente" id="cliente" required>
+            <label for="cliente">Cliente</label>
+            <br>
+        -->
         <input type="radio" name="cargo" value="operador" id="operador" required>
         <label for="operador">Operador</label>
         <br>

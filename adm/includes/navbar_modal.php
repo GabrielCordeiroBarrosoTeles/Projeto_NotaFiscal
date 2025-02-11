@@ -153,164 +153,216 @@
         </div>
     </nav>
 
-    <!-- Modal Cadastro Estoque -->
+  <!-- Modal Cadastro Estoque -->
 <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-            <div class="modal-body p-0">
-                <div class="container">
-                    <h1 style="text-align:center;">Cadastro de Estoque
-                        <a href="./" class="btn btn-danger float-end">VOLTAR</a>
-                    </h1>
-                    <form action="code.php" method="post" enctype="multipart/form-data">
-                        <div class="form-group">
-                            <label for="nome">Nome:</label>
-                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel" style="text-align:center">Cadastro de Estoque</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="code.php" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="valorcompra" class="form-label">Valor de Compra:</label>
+                            <input type="text" class="form-control" id="valorcompra" name="valorcompra" placeholder="Digite o preço da compra" required>
                         </div>
-                        <div class="row row-cols-1 row-cols-md-3 g-4">
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="preco">Valor de Compra:</label>
-                                    <input type="text" class="form-control" id="valorcompra" name="valorcompra" placeholder="Digite o preço da compra">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="preco">Valor de Venda:</label>
-                                    <input type="text" class="form-control" id="valorvenda" name="valorvenda" placeholder="Digite o preço da venda">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="quantidade">Quantidade:</label>
-                                    <input type="number" class="form-control" id="quantidade" name="quantidade" placeholder="Digite a quantidade">
-                                </div>
-                            </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="valorvenda" class="form-label">Valor de Venda:</label>
+                            <input type="text" class="form-control" id="valorvenda" name="valorvenda" placeholder="Digite o preço da venda" required>
                         </div>
-                        <div class="row row-cols-1 row-cols-md-2 g-4">
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="funcao">Função:</label>
-                                    <input type="text" class="form-control" id="funcao" name="funcao" placeholder="Digite a funcao">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="detalhe">Detalhe:</label>
-                                    <input type="text" class="form-control" id="detalhe" name="detalhe" placeholder="Digite o detalhe">
-                                </div>
-                            </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="quantidade" class="form-label">Quantidade:</label>
+                            <input type="number" class="form-control" id="quantidade" name="quantidade" placeholder="Digite a quantidade" required>
                         </div>
-                        <div class="row row-cols-1 row-cols-md-2 g-4">
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="marca">Marca:</label>
-                                    <input type="text" class="form-control" id="marca" name="marca" placeholder="Digite a marca">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="peso">Peso:</label>
-                                    <input type="text" class="form-control" id="peso" name="peso" placeholder="Digite o peso">
-                                </div>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="funcao" class="form-label">Função:</label>
+                            <input type="text" class="form-control" id="funcao" name="funcao" placeholder="Digite a função" required>
                         </div>
-                        <div class="form-group">
-                            <label for="imagem">imagem:</label>
-                            <input type="file" class="form-control" id="imagem" name="imagem">
+                        <div class="col-md-6 mb-3">
+                            <label for="detalhe" class="form-label">Detalhe:</label>
+                            <input type="text" class="form-control" id="detalhe" name="detalhe" placeholder="Digite o detalhe" required>
                         </div>
-
-                        <div style="text-align:center;">
-                            <br>
-                            <button type="submit" name="save_estoque" class="btn btn-primary">Enviar</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="marca" class="form-label">Marca:</label>
+                            <input type="text" class="form-control" id="marca" name="marca" placeholder="Digite a marca" required>
                         </div>
-                        <br>
-                    </form>
-                </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="peso" class="form-label">Peso:</label>
+                            <input type="text" class="form-control" id="peso" name="peso" placeholder="Digite o peso" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="imagem" class="form-label">Imagem:</label>
+                        <input type="file" class="form-control" id="imagem" name="imagem" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" name="save_estoque" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
 
+<style>
+    .modal-header {
+        background-color: #8B4513;
+        color: white;
+    }
+    .modal-title {
+        margin: auto;
+    }
+    .btn-close {
+        background-color: white;
+        border: none;
+    }
+    .btn-primary {
+        background-color: #8B4513;
+        border: none;
+    }
+    .btn-primary:hover {
+        background-color: #6b3510;
+    }
+    .form-label {
+        color: #8B4513;
+    }
+</style>
 
-       <!-- Modal Cadastro Cliente -->
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content">
-                <div class="modal-body p-0">
-                    <div class="container">
-                        <h1 style="text-align:center;">Cadastro de Cliente
-                        <a href="./" class="btn btn-danger float-end">Voltar</a>
-                        </h1>
-                        <form action="code.php" method="post">
-                            <div class="form-group">
-                                <label for="nome">Nome:</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome">
-                            </div>
-                            <div class="form-group">
-                                <label for="preco">CPF:</label>
-                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite o cpf">
-                            </div>
-                            <div class="form-group">
-                                <label for="preco">Email:</label>
-                                <input type="text" class="form-control" id="email" name="email" placeholder="Digite o email">
-                            </div>
-                            <div class="form-group">
-                                <label for="preco">Telefone:</label>
-                                <input type="text" class="form-control phone" id="telefone" name="telefone" placeholder="Digite o telefone">
-                            </div>
-                            <div style="text-align:center;">
-                                <br>
-                                <button type="submit" name="save_cliente" class="btn btn-primary">Enviar</button>
-                            </div>
 
-                            <br>
-                        </form>
+    <!-- Modal Cadastro Cliente -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel"  style="text-align:center">Cadastro de Cliente</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="code.php" method="post">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome" required>
                     </div>
-                </div>
+                    <div class="mb-3">
+                        <label for="cpf" class="form-label">CPF:</label>
+                        <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite o CPF" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite o email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone:</label>
+                        <input type="text" class="form-control phone" id="telefone" name="telefone" placeholder="Digite o telefone" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" name="save_cliente" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+</div>
+
+<style>
+    .modal-header {
+        background-color: #8B4513;
+        color: white;
+    }
+    .modal-title {
+        margin: auto;
+    }
+    .btn-close {
+        background-color: white;
+        border: none;
+    }
+    .btn-primary {
+        background-color: #8B4513;
+        border: none;
+    }
+    .btn-primary:hover {
+        background-color: #6b3510;
+    }
+    .form-label {
+        color: #8B4513;
+    }
+</style>
 
 
 <!-- Modal Cadastro Usuário -->
 <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-            <div class="modal-body p-0">
-                <div class="container">
-                    <h1 style="text-align:center;">Cadastro de Usuário
-                        <a href="./" class="btn btn-danger float-end">Voltar</a>
-                    </h1>
-                    <form action="cadastrar_usuario.php" method="post">
-                        <div class="form-group">
-                            <label for="login">Login:</label>
-                            <input type="text" class="form-control" id="login" name="login" placeholder="Digite o login" required>
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel"  style="text-align:center">Cadastro de Usuário</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="cadastrar_usuario.php" method="post">
+                    <div class="mb-3">
+                        <label for="login" class="form-label">Login:</label>
+                        <input type="text" class="form-control" id="login" name="login" placeholder="Digite o login" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="senha" class="form-label">Senha:</label>
+                        <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite a senha" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Cargo:</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="cargo" id="operador" value="operador" required>
+                            <label class="form-check-label" for="operador">Operador</label>
                         </div>
-                        <div class="form-group">
-                            <label for="senha">Senha:</label>
-                            <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite a senha" required>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="cargo" id="adm" value="adm" required>
+                            <label class="form-check-label" for="adm">Administrador</label>
                         </div>
-                        <div class="form-group">
-                            <label>Cargo:</label><br>
-                            <input type="radio" name="cargo" value="cliente" id="cliente" required> Cliente
-                            <br>
-                            <input type="radio" name="cargo" value="operador" id="operador" required> Operador
-                            <br>
-                            <input type="radio" name="cargo" value="adm" id="adm" required> Administrador
-                        </div>
-
-                        <div style="text-align:center;">
-                            <br>
-                            <button type="submit" class="btn btn-primary">Cadastrar</button>
-                            <br>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
+
+<style>
+    .modal-header {
+        background-color: #8B4513;
+        color: white;
+    }
+    .modal-title {
+        margin: auto;
+    }
+    .btn-close {
+        background-color: white;
+        border: none;
+    }
+    .btn-primary {
+        background-color: #8B4513;
+        border: none;
+    }
+    .btn-primary:hover {
+        background-color: #6b3510;
+    }
+    .form-label {
+        color:rgb(0, 0, 0);
+    }
+    .form-check-label {
+        color:rgb(0, 0, 0);
+    }
+</style>
 
 
 

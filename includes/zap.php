@@ -26,14 +26,14 @@
                     <div class="whatswidget-conversation-cta" style="all:revert;"> 
                         <?php
                             echo "
-                                <a style='all: revert;' id='whatswidget-phone-desktop' target='_blank' href='https://api.whatsapp.com/send?phone=" . $CompanyTelephone . "&text=" . $CompanyName . "' class='whatswidget-cta whatswidget-cta-desktop'>
+                                <a style='all: revert;' id='whatswidget-phone-desktop' target='_blank' href='https://api.whatsapp.com/send?phone=" . $CompanyTelephone . "&text=" . $MessageToSendToTheCompany . "' class='whatswidget-cta whatswidget-cta-desktop'>
                                     Enviar Mensagem
                                 </a>
                             ";
                         ?>
                         <?php
                             echo "
-                                <a id='whatswidget-phone-mobile' target='_blank' href='https://api.whatsapp.com/send?phone=" . $CompanyTelephone . "&text=" . $CompanyName . "' class='whatswidget-cta whatswidget-cta-mobile' style='all:revert;'>
+                                <a id='whatswidget-phone-mobile' target='_blank' href='https://api.whatsapp.com/send?phone=" . $CompanyTelephone . "&text=" . $MessageToSendToTheCompany . "' class='whatswidget-cta whatswidget-cta-mobile' style='all:revert;'>
                                 Enviar Mensagem
                                 </a>
                             ";
