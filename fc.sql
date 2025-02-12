@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 11, 2025 at 05:51 PM
+-- Generation Time: Feb 12, 2025 at 11:55 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -78,7 +78,7 @@ INSERT INTO `estoque` (`id`, `imagem`, `nome`, `funcao`, `detalhe`, `valorcompra
 (8, 'terramicina-la.webp', 'Terramicina /LA', 'Antibióticos', 'Mensagem 3', '15.90', '20.90', 59, 1, 'ZOETIS', '50ml'),
 (10, 'terramicina_po.webp', 'Terramicina Pó', 'Antibióticos', 'Mensagem 2', '19.00', '24.40', 22, 0, 'ZOETIS', '100g'),
 (11, 'cef-50.webp', 'Cef-50', 'Antibióticos', 'Mensagem 3', '55.90', '60.00', 42, 3, 'Agener', '100ml'),
-(12, 'Agemoxi-Cl.webp', 'Agemoxi-CL', 'Antibióticos', 'Mensagem 2', '55.90', '60.00', 2, 4, 'Agemoxi', '250mg'),
+(12, 'Agemoxi-Cl.webp', 'Agemoxi-CL', 'Antibióticos', 'Mensagem 2', '55.90', '60.00', 0, 6, 'Agemoxi', '250mg'),
 (13, 'Pulmodrazin_Plus.webp', 'Pulmodrazin Plus', 'Antimicrobianos', 'Mensagem 1', '18.80', '23.15', 11, 1, 'Pearson', '25ml'),
 (14, 'pencil-pronto.webp', 'Pencil Pronto', 'Antimicrobianos', 'Mensagem 1', '16.90', '22.00', 25, 0, 'Calbos', '50ml'),
 (15, 'Acura.webp', 'Acura', 'Antimicrobianos', 'Mensagem 2', '25.90', '33.00', 45, 0, 'Clarion', '25ml'),
@@ -86,8 +86,8 @@ INSERT INTO `estoque` (`id`, `imagem`, `nome`, `funcao`, `detalhe`, `valorcompra
 (18, 'antitoxico_oral.webp', 'Antitóxicos SM', 'Antitóxicos', 'Mensagem 1', '14.30', '20.22', 0, 22, 'SM', '20ml'),
 (19, 'Mercepton.webp', 'Mercepton', 'Antitóxicos', 'Mensagem 1', '25.90', '32.06', 34, 2, 'Bravet', '100ml'),
 (20, 'Anestésico_bravet.webp', 'Anestésico Bravet', 'Anestésicos', 'Mensagem 2', '17.20', '22.80', 29, 1, 'Bravet', '50ml'),
-(21, 'anestesico-vansil.jpg', 'Anestésico Vansil', 'Anestésicos', 'Mensagem 3', '17.20', '25.90', 44, 1, 'Vansil', '100ml'),
-(22, 'Verrutrat.webp', 'Verrutrat', 'Profilaxia e Tratamento', 'Mensagem 2', '16.90', '22.80', 46, 8, 'UCB', '20ml'),
+(21, 'anestesico-vansil.jpg', 'Anestésico Vansil', 'Anestésicos', 'Mensagem 3', '17.20', '25.90', 40, 5, 'Vansil', '100ml'),
+(22, 'Verrutrat.webp', 'Verrutrat', 'Profilaxia e Tratamento', 'Mensagem 2', '16.90', '22.80', 39, 15, 'UCB', '20ml'),
 (23, 'Tristezina.webp', 'Tristezina', 'Profilaxia e Tratamento', 'Mensagem 2', '22.20', '28.90', 45, 0, 'UCB', '20ml'),
 (24, 'Imizol.webp', 'Imizol', 'Profilaxia e Tratamento', 'Mensagem 2', '59.90', '66.90', 14, 0, 'MSD', '15ml'),
 (25, 'ferron.webp', 'Ferron B-12', 'Suplementos e Vitaminas', 'Mensagem 3', '16.21', '21.12', 60, 0, 'Calbos', '100ml'),
@@ -119,7 +119,9 @@ CREATE TABLE `usuario` (
 
 INSERT INTO `usuario` (`id`, `login`, `senha`, `cargo`) VALUES
 (1, 'adm', '$2y$10$fJwyhXHiLcc2qc.0Zh6C1uhxaQFldfUgWHwonpupumWuf34ZVhP.W', 'adm'),
-(5, 'Gabriel', '$2y$10$zxkVtE.4m1p.XK/oHx/yaO6RE37a4A3JSwuH2..25JXGeyiq59biW', 'operador');
+(5, 'Gabriel', '$2y$10$zxkVtE.4m1p.XK/oHx/yaO6RE37a4A3JSwuH2..25JXGeyiq59biW', 'operador'),
+(6, 'cliente', '$2y$10$.ZUULBXhR4j4vFYYP2KlMuhSkZ9fFsj3gXmtzKO2DI3TP3NkWmJ/q', 'cliente'),
+(7, 'operador', '$2y$10$qX2h/Zp8r9RTq0dBfrdNm.V7Bg0RjESeE64prX1WBFAYoegnXXHf6', 'operador');
 
 --
 -- Indexes for dumped tables
@@ -164,7 +166,7 @@ ALTER TABLE `estoque`
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
