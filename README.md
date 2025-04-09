@@ -31,6 +31,21 @@
 
 ---
 
+## 📌 Escopo da Próxima Atualização
+
+Nesta atualização, o foco será na **migração dos arquivos** `produto.php` e `receber_login.php` para um **padrão MVC leve**. Essa reorganização visa:
+
+- Separar as responsabilidades da aplicação (Model, View, Controller), facilitando a manutenção, escalabilidade e segurança do sistema.
+- Centralizar o roteamento por meio de um front controller que direciona as requisições aos respectivos controllers.
+- Modularizar a estrutura com diretórios específicos, como **Controllers**, **Models**, **Views** e **Config**.
+
+Para conferir o documento completo com todas as etapas, objetivos, requisitos, estrutura de diretórios e cronograma, acesse:  
+
+[Escopo do Projeto: Migração para Padrão MVC Leve](Antigo/escopo.md)
+
+
+---
+
 ### O que foi feito:
 1. **Ajuste nas permissões de usuário**: 
    - Agora, o sistema possui diferentes tipos de usuários: **usuário comum**, **operador** e **administrador (ADM)**, com permissões diferenciadas.
