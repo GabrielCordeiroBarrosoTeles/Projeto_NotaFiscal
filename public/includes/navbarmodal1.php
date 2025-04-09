@@ -1,5 +1,5 @@
 <?php
-    require 'config.php'; // Importa as configurações do site
+    require '../config/config.php'; // Importa as configurações do site
 ?>
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -152,7 +152,7 @@
                     </p>
                 </li>
                 <?php
-                require 'dbcon.php';
+                require '../config/dbcon.php';
                 $query = "SELECT DISTINCT id, funcao FROM estoque WHERE funcao IN ('Anestésicos', 'Antitóxicos', 'Antimicrobianos', 'Antibióticos');";
                 $query_run = mysqli_query($mysqli, $query);
 

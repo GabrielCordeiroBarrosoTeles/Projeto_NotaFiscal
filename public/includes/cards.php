@@ -21,7 +21,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <?php
-    require 'dbcon.php';
+    require '../config/dbcon.php';
     $funcao = "Anti-Inflamatórios";
     $query = "SELECT * FROM estoque WHERE funcao = '$funcao' ORDER BY vendido DESC LIMIT 4";
     $query_run = mysqli_query($mysqli, $query);
@@ -79,7 +79,7 @@
     }
 ?>
 <?php
-    require 'dbcon.php';
+    require '../config/dbcon.php';
     $funcao = "Suplementos e Vitaminas";
     $query = "SELECT * FROM estoque WHERE funcao = '$funcao' ORDER BY vendido DESC LIMIT 4";
     $query_run = mysqli_query($mysqli, $query);
@@ -137,7 +137,7 @@
     }
 ?>
 <?php
-    require 'dbcon.php';
+    require '../config/dbcon.php';
     $funcao = "Antimicrobianos";
     $query = "SELECT * FROM estoque WHERE funcao = '$funcao' ORDER BY vendido DESC LIMIT 4";
     $query_run = mysqli_query($mysqli, $query);

@@ -1,5 +1,5 @@
 <?php
-    require 'config.php'; // Importa as configurações do site
+    require '../config/config.php'; // Importa as configurações do site
 ?>
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
