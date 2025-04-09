@@ -1,10 +1,46 @@
 <?php
-    require '../config/config.php'; // Importa as configurações do site
+require_once __DIR__ . '/../vendor/autoload.php'; // Certifique-se de que este caminho está correto
+require_once __DIR__ . '/../config/database.php';
+
+use App\Routing\Router;
+use Dotenv\Dotenv; // Import Dotenv
+
+// Load environment variables from .env
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
+
+// Debugging: Ensure PHP is running
+if (!function_exists('phpinfo')) {
+    die("Erro: O PHP não está sendo interpretado corretamente. Verifique a configuração do servidor.");
+}
+
+// Set the base URL dynamically
+$baseUrl = str_replace('/public', '', dirname($_SERVER['SCRIPT_NAME']));
+$baseUrl = rtrim($baseUrl, '/');
+echo "<base href='{$baseUrl}/'>";
+
+// Define the company name
+$CompanyName = getenv('COMPANY_NAME');
+
+if (!$CompanyName) {
+    error_log("Warning: 'COMPANY_NAME' not found in .env file. Using default value.");
+    $CompanyName = 'Default Company Name'; // Fallback to a default value if not set
+}
+
+$router = new Router($baseUrl); // Pass the correct base path
+require_once __DIR__ . '/../routes/web.php';
+
+try {
+    $router->dispatch();
+} catch (Exception $e) {
+    http_response_code(404);
+    echo "404 Not Found - A rota '" . htmlspecialchars($_SERVER['REQUEST_URI']) . "' não foi encontrada.";
+}
 ?>
 <!DOCTYPE html>
- <html lang="pt-br">
+<html lang="pt-br">
     <head>
-        <title>Home - <?php echo $CompanyName ; ?> </title>
+        <title>Home - <?php echo $CompanyName; ?> </title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>

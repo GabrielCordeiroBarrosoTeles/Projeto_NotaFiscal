@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Ensure the base directory is correct
+    RewriteBase /sitefiscal/
+
+    # Redirect to remove /index.php from the URL
+    RewriteCond %{THE_REQUEST} \s/index\.php [NC]
+    RewriteRule ^index\.php(.*)$ $1 [R=301,L]
+
+    # Redirect all requests to public/index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ public/index.php [L]
+</IfModule>
+
+# Ensure PHP files are handled correctly
+<FilesMatch "\.php$">
+    SetHandler application/x-httpd-php
+</FilesMatch>
