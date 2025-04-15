@@ -1,14 +1,7 @@
 <?php
 session_start();
 
-// Definindo as constantes para conexão com o banco de dados
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'fc');
-
-// Conectar ao banco de dados
-$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+require 'dbcon.php';
 
 // Verificar se ocorreu erro na conexão
 if ($mysqli->connect_error) {

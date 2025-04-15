@@ -112,7 +112,7 @@ input.form-control {
             <a class="nav-link text-dark" style="text-decoration:none;" href="index.php">Home</a>
           </li>
           <?php
-require 'dbcon.php';
+
 $query = "SELECT DISTINCT id, funcao FROM estoque WHERE funcao IN ('Anestésicos', 'Antitóxicos', 'Antimicrobianos', 'Antibióticos');";
 $query_run = mysqli_query($mysqli, $query);
 

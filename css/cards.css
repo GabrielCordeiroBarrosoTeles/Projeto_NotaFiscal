@@ -1,0 +1,32 @@
+/* Estilo para o título */
+h2 {
+    text-align: center;
+}
+
+/* Botão "Ver Mais" */
+.btn-brand {
+    color: #ffff;
+    background-color: #8B4513;
+    border: #8B4513;
+}
+
+/* Modal imagem */
+.modal-body img {
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+/* Texto pequeno e centralizado */
+.small.text-muted.font-italic.text-center {
+    text-align: center;
+    font-style: italic;
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+/* Card body padding */
+.card-body.p-4 {
+    padding: 1.5rem;
+}
