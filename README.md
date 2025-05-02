@@ -66,7 +66,10 @@ Bem-vindo ao **Sistema de Gerenciamento de Estoque e Impressão de Nota Fiscal**
 ![Modal de Login](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img1.png)
 
 ### 2. **Pop-up do WhatsApp**
-![Pop-up do WhatsApp](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img2.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img2.png" alt="Pop-up do WhatsApp">
+</p>
+
 
 ### 3. **Área do Administrador**
 ![Área do Administrador](https://raw.githubusercontent.com/GabrielCordeiroBarrosoTeles/Imgs_repositorios/refs/heads/main/Sistema_NF/img3.png)
